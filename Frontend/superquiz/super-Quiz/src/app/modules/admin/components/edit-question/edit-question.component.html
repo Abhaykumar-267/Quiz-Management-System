@@ -1,0 +1,124 @@
+<!-- <div style="max-width: 600px; margin: auto;">
+  <h2>Edit Question</h2>
+
+  <form (ngSubmit)="updateQuestion()" *ngIf="question">
+    <label>Question Text</label>
+    <input type="text" [(ngModel)]="question.questionText" name="questionText" class="form-control" required />
+
+    <label>Option A</label>
+    <input type="text" [(ngModel)]="question.optionA" name="optionA" class="form-control" required />
+
+    <label>Option B</label>
+    <input type="text" [(ngModel)]="question.optionB" name="optionB" class="form-control" required />
+
+    <label>Option C</label>
+    <input type="text" [(ngModel)]="question.optionC" name="optionC" class="form-control" required />
+
+    <label>Option D</label>
+    <input type="text" [(ngModel)]="question.optionD" name="optionD" class="form-control" required />
+
+    <label>Correct Answer</label>
+    <select [(ngModel)]="question.correctAnswer" name="correctAnswer" class="form-control" required>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+    </select>
+
+    <button nz-button [nzType]="'primary'" type="submit" style="margin-top: 20px;">
+      Update Question
+    </button>
+  </form>
+</div> -->
+
+
+<!-- <h2>Edit Question</h2>
+
+<form (ngSubmit)="updateQuestion()" *ngIf="question">
+  <label>Question Title:</label>
+  <input nz-input [(ngModel)]="question.title" name="title" placeholder="Enter question title" />
+
+  <label>Option A:</label>
+  <input nz-input [(ngModel)]="question.optionA" name="optionA" placeholder="Option A" />
+
+  <label>Option B:</label>
+  <input nz-input [(ngModel)]="question.optionB" name="optionB" placeholder="Option B" />
+
+  <label>Option C:</label>
+  <input nz-input [(ngModel)]="question.optionC" name="optionC" placeholder="Option C" />
+
+  <label>Option D:</label>
+  <input nz-input [(ngModel)]="question.optionD" name="optionD" placeholder="Option D" />
+
+  <label>Correct Answer:</label>
+  <input nz-input [(ngModel)]="question.correctAnswer" name="correctAnswer" placeholder="Correct Answer" />
+
+  <br /><br />
+
+  <button nz-button [nzType]="'primary'" type="submit">Update</button>
+</form> -->
+
+
+<!-- <div class="edit-question-wrapper">
+  <div class="edit-question-box">
+    <h2>Edit Question</h2>
+
+    <label>Question Title:</label>
+    <input type="text" [(ngModel)]="question.questionTitle" placeholder="Enter question title" />
+
+    <label>Option A:</label>
+    <input type="text" [(ngModel)]="question.optionA" placeholder="Option A" />
+
+    <label>Option B:</label>
+    <input type="text" [(ngModel)]="question.optionB" placeholder="Option B" />
+
+    <label>Option C:</label>
+    <input type="text" [(ngModel)]="question.optionC" placeholder="Option C" />
+
+    <label>Option D:</label>
+    <input type="text" [(ngModel)]="question.optionD" placeholder="Option D" />
+
+    <label>Correct Answer:</label>
+    <input type="text" [(ngModel)]="question.correctAnswer" placeholder="Correct Answer" />
+
+    <button (click)="updateQuestion()">Update</button>
+  </div>
+</div> -->
+
+
+
+<div class="edit-question-container">
+  <h2>Edit Question</h2>
+
+  <div class="form-group">
+    <label>Question Title:</label>
+    <input type="text" [(ngModel)]="question.title" class="form-control" placeholder="Enter question title">
+  </div>
+
+  <div class="form-group">
+    <label>Option A:</label>
+    <input type="text" [(ngModel)]="question.optionA" class="form-control" placeholder="Option A">
+  </div>
+
+  <div class="form-group">
+    <label>Option B:</label>
+    <input type="text" [(ngModel)]="question.optionB" class="form-control" placeholder="Option B">
+  </div>
+
+  <div class="form-group">
+    <label>Option C:</label>
+    <input type="text" [(ngModel)]="question.optionC" class="form-control" placeholder="Option C">
+  </div>
+
+  <div class="form-group">
+    <label>Option D:</label>
+    <input type="text" [(ngModel)]="question.optionD" class="form-control" placeholder="Option D">
+  </div>
+
+  <div class="form-group">
+    <label>Correct Answer:</label>
+    <input type="text" [(ngModel)]="question.correctAnswer" class="form-control" placeholder="Correct Answer">
+  </div>
+
+  <button class="btn btn-primary mt-3">Update</button>
+</div>

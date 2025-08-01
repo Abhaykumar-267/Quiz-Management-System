@@ -1,0 +1,67 @@
+$secondary-color: #141a33;
+$primary-color: #F48023;
+$White: #ffffff;
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 57px;
+  background-color: $primary-color;
+  height: auto;
+
+  a.active {
+    background: $secondary-color;
+  }
+
+  a {
+    font-weight: 300;
+    font-size: 15px;
+    border-radius: 0px;
+    color: $White;
+  }
+
+  a.ant-btn {
+    &:hover {
+      color: $White;
+      background: $secondary-color;
+    }
+  }
+
+  img {
+    width: 180px;
+  }
+
+  .img_profile {
+    width: 25px;
+  }
+}
+
+
+
+.about {
+  display: inline-block; // ❗ Sirf content ke width tak hi limited
+  margin: 20px;    // ⬆️ top se gap aur center align
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow:
+    inset 0 0 10px rgba(255, 255, 255, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.4);
+
+  // 🎨 Stylish background (3D feel)
+  background: linear-gradient(145deg, #1f1c2c, #928dab);
+  background-size: cover;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  p {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+}
